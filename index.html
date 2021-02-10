@@ -11,10 +11,10 @@
     <script>
         const canvas = document.querySelector("canvas");
         const ctx = canvas.getContext("2d");
-        const skelly = new Image();
-        skelly.src = "assets/skelly.png"
+        const mario = new Image();
+        mario.src = "assets/mariobros.png"
 
-        skelly.addEventListener("load", terminouDeCarregar);
+        mario.addEventListener("load", terminouDeCarregar);
 
         function desenhaFundo(){
             ctx.fillStyle = "green";
@@ -49,7 +49,7 @@
             quadro = (quadro >= POSES[pose].qmax -1 ) ? 0 : quadro + POSES[pose].pv * dt;
             
 
-            ctx.drawImage(skelly,
+            ctx.drawImage(mario,
             // sx ,sy , sw ,sh
             Math.floor(quadro)*64, pose * 64 ,64, 64,
             // dx ,dy , dw ,dh
