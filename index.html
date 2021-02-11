@@ -8,6 +8,7 @@
 <body>
     <h1>Exemplo 02</h1>
     <canvas></canvas>
+    <h2>Criado por :Pedro Henrique Marques</h2>
     <script>
         const canvas = document.querySelector("canvas");
         const ctx = canvas.getContext("2d");
@@ -24,7 +25,7 @@
 
 
         let l = 3;
-        let c = 1;
+        let c = 0;
         let pose = 0;
         let quadro = 0;
         const POSES = [
@@ -51,9 +52,9 @@
 
             ctx.drawImage(mario,
             // sx ,sy , sw ,sh
-            Math.floor(quadro)*34, pose * 34 ,34, 34,
+            Math.floor(quadro)*38, pose * 38 ,38, 38,
             // dx ,dy , dw ,dh
-            0, 0 ,34 , 34,
+            0, 0 ,38 , 38,
             );
 
 
